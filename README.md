@@ -1,1 +1,1 @@
-# rozzaq personal website
+# rozzaq
