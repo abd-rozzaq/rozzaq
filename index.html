@@ -306,45 +306,44 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 form-home mt-5" id="contactme">
-                <form class="form-contact-person">
+                <form class="form-contact-person" action="contact.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
                     <div class="form-group">
-                        <div class="form-group">
-                            <label for="inputEmail4">Let’s meet. What’s your name?</label>
-                            <input type="email" class="form-control" id="inputEmail4">
-                        </div>
+                        <label for="inputtext">Let’s meet. What’s your name?</label>
+                        <input name="name" type="text" class="form-control" id="inputtext">
                     </div>
-                    <div class="form-group mt-4">
-                        <label for="inputAddress">And your email…</label>
-                        <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="form-group mt-4">
+                    <label for="inputEmail4">And your email…</label>
+                    <input name="email" type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-row mt-4">
+                    <div class="form-group col-md-6">
+                        <label for="inputState">How can I help you?</label>
+                        <select name="designtype" id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Web Design</option>
+                            <option>App Design</option>
+                            <option>Web App Design</option>
+                        </select>
                     </div>
-                    <div class="form-row mt-4">
-                        <div class="form-group col-md-6">
-                            <label for="inputState">How can I help you?</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>Web Design</option>
-                                <option>App Design</option>
-                                <option>Web App Design</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputState">What’s the priority?</label>
-                            <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>We have time</option>
-                                <option>Urgent</option>
-                                <option>ASAP</option>
-                                <option>Does not apply</option>
-                            </select>
-                        </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">What’s the priority?</label>
+                        <select name="priority" id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>We have time</option>
+                            <option>Urgent</option>
+                            <option>ASAP</option>
+                            <option>Does not apply</option>
+                        </select>
                     </div>
-                    <div class="form-group mt-3">
-                        <label for="exampleFormControlTextarea1">Tell me more about your project</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="Budget, extra details, deadlines, special requirements…" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary form-contact mt-3">Let’s work!</button>
-                </form>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="exampleFormControlTextarea1">Tell me more about your project</label>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Budget, extra details, deadlines, special requirements…" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-contact mt-3">Let’s work!</button>
+            </form>
             </div>
         </div>
     </div>
