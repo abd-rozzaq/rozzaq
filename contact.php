@@ -20,4 +20,4 @@ $headers = "Reply-To: $email \r\n";
 
 mail($to, $email_subject, $email_body, $headers);
 
-header("location: front-page.php");
+header("location: index.html");
